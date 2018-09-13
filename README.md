@@ -24,5 +24,5 @@ This repo contains scripts and instructions on how to setup my development envir
 
 ## For Data Science
 1. [Install Conda](https://conda.io/docs/user-guide/install/linux.html) and use conda envs
-2. [Setup Jupyter as a server)(https://jupyter-notebook.readthedocs.io/en/latest/public_server.html)
+2. [Setup Jupyter as a server](https://jupyter-notebook.readthedocs.io/en/latest/public_server.html)
 3. [Docker CE](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
