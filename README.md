@@ -21,4 +21,8 @@ This repo contains scripts and instructions on how to setup my development envir
 4. [Install Pathogen for Vim Package installation](https://github.com/tpope/vim-pathogen)
 5. [Install NERDTree with Pathogen](https://github.com/scrooloose/nerdtree#installation)
 6. [Install Jedi-vim with Pathogen](https://github.com/davidhalter/jedi-vim#installation)
-7. [Install Conda](https://conda.io/docs/user-guide/install/linux.html) and use conda envs
+
+## For Data Science
+1. [Install Conda](https://conda.io/docs/user-guide/install/linux.html) and use conda envs
+2. [Setup Jupyter as a server)(https://jupyter-notebook.readthedocs.io/en/latest/public_server.html)
+3. [Docker CE](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
