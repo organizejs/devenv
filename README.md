@@ -26,3 +26,4 @@ This repo contains scripts and instructions on how to setup my development envir
 1. [Install Conda](https://conda.io/docs/user-guide/install/linux.html) and use conda envs
 2. [Setup Jupyter as a server](https://jupyter-notebook.readthedocs.io/en/latest/public_server.html)
 3. [Docker CE](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+4. [NVIDIA Drivers](https://askubuntu.com/questions/1077061/how-do-i-install-nvidia-and-cuda-drivers-into-ubuntu)
