@@ -80,6 +80,11 @@ let NERDTreeIgnore=['\.pyc$', '\.pyo$', '__pycache__$']
 Open vim and run `:PlugInstall` to install the specified plugins. After this, NerdTree and SimpylFold will work. However, YouCompleteMe will need additional installation and configuration.
 
 ## YouCompleteMe
+Install development tools, CMake, and Python headers:
+```bash
+sudo apt install build-essential cmake python3-dev
+```
+
 Navigate to `~/.vim/plugged/YouCompleteMe` and run `python install.py`. This will enable YouCompleteMe to work on your default python path.
 
 To make YouCompleteMe work within a conda environment, create a `.ycm_extra_conf.py` file in the root of your project directory, and paste the following into it:
