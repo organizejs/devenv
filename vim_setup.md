@@ -94,3 +94,7 @@ To find out the path to your virtual environment python, make sure you are in yo
 With this setup, the recommendation is to use a single conda environment per project (each project should be contained to a single directory) so that the `.ycm_extra_conf.py` file is stored in each project dir. 
 
 Do not forget to add the `.ycm_extra_conf.py` file to your `.gitignore`.
+
+---
+
+Inspiration: https://realpython.com/vim-and-python-a-match-made-in-heaven/#vim-in-the-shell
