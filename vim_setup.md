@@ -1,5 +1,5 @@
 # VIM on Ubuntu
-These instructions are for a new Ubuntu >= 16.04 LTS and assumes that the user works in conda environments.
+These instructions are for a new Ubuntu >= 16.04 LTS and assumes that the user works in conda environments. 
 
 This setup will enhance VIM as an IDE in several ways:
 1. File browsing and navigation
@@ -91,3 +91,6 @@ def Settings( **kwargs ):
 ```
 To find out the path to your virtual environment python, make sure you are in your conda environment and run `which python`. 
 
+With this setup, the recommendation is to use a single conda environment per project (each project should be contained to a single directory) so that the `.ycm_extra_conf.py` file is stored in each project dir. 
+
+Do not forget to add the `.ycm_extra_conf.py` file to your `.gitignore`.
