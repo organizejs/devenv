@@ -31,7 +31,12 @@ call plug#begin('~/.vim/plugged')
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
     Plug 'Valloric/YouCompleteMe'
     Plug 'tmhedberg/SimpylFold'
+    Plug 'vim-airline/vim-airline'
 call plug#end()
+
+" allow intelligent auto-indenting for each filetype,
+" and for plugins that are filetype specific.
+filetype indent plugin on
 
 " pretty
 let python_highlight_all=1
