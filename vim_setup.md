@@ -78,7 +78,6 @@ map <leader>g  :YcmCompleter GoTo<CR>
 
 " NERDTree Config
 map <C-n> :NERDTreeToggle<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif " close if only NERTree view remains
 let NERDTreeIgnore=['\.pyc$', '\.pyo$', '__pycache__$']
 ```
 
