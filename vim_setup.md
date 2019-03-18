@@ -1,4 +1,4 @@
-# VIM on Ubuntu
+# VIM + TMUX on Ubuntu
 These instructions are for a new Ubuntu >= 16.04 LTS and assumes that the user works in conda environments. 
 
 This setup will enhance VIM as an IDE in several ways:
@@ -105,5 +105,10 @@ With this setup, the recommendation is to use a single conda environment per pro
 Do not forget to add the `.ycm_extra_conf.py` file to your `.gitignore`.
 
 ---
+## Tmux
+
+- Add `[ -n "$TMUX" ] && export TERM=screen-256color` to .bashrc file
+---
+
 
 Inspiration: https://realpython.com/vim-and-python-a-match-made-in-heaven/#vim-in-the-shell
