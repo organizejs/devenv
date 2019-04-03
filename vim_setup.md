@@ -45,8 +45,8 @@ syntax on
 " numbering (hybrid relative + absolute number)
 set number relativenumber
 
-" PEP 8 indentation for python and markdown
-au BufNewFile,BufRead *.py, *.md
+" PEP 8 indentation for python
+au BufNewFile,BufRead *.py
     \ set tabstop=4 |
     \ set softtabstop=4 |
     \ set shiftwidth=4 |
