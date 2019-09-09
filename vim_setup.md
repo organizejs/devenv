@@ -16,16 +16,19 @@ This setup will enhance VIM as an IDE in several ways:
 Follow these steps to setup VIM.
 
 ### vim-plug
-Install vim-plug (plugin manager for vim) https://github.com/junegunn/vim-plug
-```bash
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
+All vim plugin installation will be handled by vim-plug (plugin manager for vim) https://github.com/junegunn/vim-plug. We will automatically install this in our `~/.vimrc` file.
 
 ## Vimrc
 Create a vimrc in your root dir (`~/.vimrc`) and paste the following:
 
 ```bash
+" install vim-plug if not installed
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 " vim-plug
 call plug#begin('~/.vim/plugged')
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
