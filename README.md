@@ -18,4 +18,4 @@ This repo contains scripts and instructions on how to setup my development envir
 1. [Install Conda](https://conda.io/docs/user-guide/install/linux.html) and use conda envs
 1. [Setup Jupyter as a server](https://jupyter-notebook.readthedocs.io/en/latest/public_server.html)
 1. [Docker CE](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
-1. [NVIDIA Drivers](https://askubuntu.com/questions/1077061/how-do-i-install-nvidia-and-cuda-drivers-into-ubuntu)
+1. [NVIDIA Drivers](https://medium.com/better-programming/install-tensorflow-1-13-on-ubuntu-18-04-with-gpu-support-239b36d29070) / [OLD](https://askubuntu.com/questions/1077061/how-do-i-install-nvidia-and-cuda-drivers-into-ubuntu)
