@@ -15,7 +15,7 @@ This repo contains scripts and instructions on how to setup my development envir
 1. Setup vim using this [guide](vim_setup.md).
 
 ## For Data Science
-1. [Install Conda](https://conda.io/docs/user-guide/install/linux.html) and use conda envs
+1. [Install Conda](https://www.digitalocean.com/community/tutorials/how-to-install-anaconda-on-ubuntu-18-04-quickstart) and use conda envs
 1. [Setup Jupyter as a server](https://jupyter-notebook.readthedocs.io/en/latest/public_server.html)
 1. [Docker CE](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
-1. [NVIDIA Drivers](https://gist.github.com/Mahedi-61/2a2f1579d4271717d421065168ce6a73) / [OLD](https://askubuntu.com/questions/1077061/how-do-i-install-nvidia-and-cuda-drivers-into-ubuntu)
+1. [NVIDIA Drivers](https://medium.com/@exesse/cuda-10-1-installation-on-ubuntu-18-04-lts-d04f89287130)
