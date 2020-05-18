@@ -80,33 +80,33 @@ let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoTo<CR>
 
 " " NERDTree Config
-" " map <C-n> :NERDTreeToggle<CR>
-" let NERDTreeIgnore=['\.pyc$', '\.pyo$', '__pycache__$']
+map <C-n> :NERDTreeToggle<CR>
+let NERDTreeIgnore=['\.pyc$', '\.pyo$', '__pycache__$']
 
 " netrw Config
-let g:NetrwIsOpen=0
-function! ToggleNetrw()
-    if g:NetrwIsOpen
-        let i = bufnr("$")
-        while (i >= 1)
-            if (getbufvar(i, "&filetype") == "netrw")
-                silent exe "bwipeout " . i
-            endif
-            let i-=1
-        endwhile
-        let g:NetrwIsOpen=0
-    else
-        let g:NetrwIsOpen=1
-        silent Lexplore
-    endif
-endfunction
+" let g:NetrwIsOpen=0
+" function! ToggleNetrw()
+"     if g:NetrwIsOpen
+"         let i = bufnr("$")
+"         while (i >= 1)
+"             if (getbufvar(i, "&filetype") == "netrw")
+"                 silent exe "bwipeout " . i
+"             endif
+"             let i-=1
+"         endwhile
+"         let g:NetrwIsOpen=0
+"     else
+"         let g:NetrwIsOpen=1
+"         silent Lexplore
+"     endif
+" endfunction
 
-noremap <silent> <C-n> :call ToggleNetrw()<CR>
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 2
-let g:netrw_altv = 1
-let g:netrw_winsize = 15
+" noremap <silent> <C-n> :call ToggleNetrw()<CR>
+" let g:netrw_banner = 0
+" let g:netrw_liststyle = 3
+" let g:netrw_browse_split = 2
+" let g:netrw_altv = 1
+" let g:netrw_winsize = 15
 ```
 
 Open vim and run `:PlugInstall` to install the specified plugins. After this, NerdTree and SimpylFold will work. However, YouCompleteMe will need additional installation and configuration.
