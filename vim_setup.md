@@ -31,7 +31,7 @@ endif
 
 " vim-plug
 call plug#begin('~/.vim/plugged')
-"    Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+    Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
     Plug 'Valloric/YouCompleteMe'
     Plug 'tmhedberg/SimpylFold'
     Plug 'vim-airline/vim-airline'
