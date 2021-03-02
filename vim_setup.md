@@ -12,6 +12,14 @@ This setup will enhance VIM as an IDE in several ways:
 1. Remove configuration files: `rm -Rf ~/.vim ~/.vimrc ~/.viminfo`
 1. Reinstall: `sudo apt-get install vim`
 
+In order for YouCompleteMe to work, you will need the latest version of vim. The steps above won't get you the latest version of vim. To get the latest, (8.2 as of the time of writing), run the following:
+```
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
+sudo apt install vim
+```
+
+
 ## Setup VIM
 Follow these steps to setup VIM.
 
@@ -82,31 +90,6 @@ map <leader>g  :YcmCompleter GoTo<CR>
 " " NERDTree Config
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeIgnore=['\.pyc$', '\.pyo$', '__pycache__$']
-
-" netrw Config
-" let g:NetrwIsOpen=0
-" function! ToggleNetrw()
-"     if g:NetrwIsOpen
-"         let i = bufnr("$")
-"         while (i >= 1)
-"             if (getbufvar(i, "&filetype") == "netrw")
-"                 silent exe "bwipeout " . i
-"             endif
-"             let i-=1
-"         endwhile
-"         let g:NetrwIsOpen=0
-"     else
-"         let g:NetrwIsOpen=1
-"         silent Lexplore
-"     endif
-" endfunction
-
-" noremap <silent> <C-n> :call ToggleNetrw()<CR>
-" let g:netrw_banner = 0
-" let g:netrw_liststyle = 3
-" let g:netrw_browse_split = 2
-" let g:netrw_altv = 1
-" let g:netrw_winsize = 15
 ```
 
 Open vim and run `:PlugInstall` to install the specified plugins. After this, NerdTree and SimpylFold will work. However, YouCompleteMe will need additional installation and configuration.
@@ -118,6 +101,8 @@ sudo apt install build-essential cmake python3-dev
 ```
 
 Navigate to `~/.vim/plugged/YouCompleteMe` and run `python install.py`. This will enable YouCompleteMe to work on your default python path.
+
+> When installing YouCompleteMe, you may run into the following error: ```**Your C++ compiler does NOT fully support C++17.** ```. Visit this post to overcome the issue: https://stackoverflow.com/questions/65284572/your-c-compiler-does-not-fully-support-c17
 
 To make YouCompleteMe work within a conda environment, create a `.ycm_extra_conf.py` file in the root of your project directory, and paste the following into it:
 ```python
